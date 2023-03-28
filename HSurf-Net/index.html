@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Some results of HSurf-Net for point cloud normal estimation">
+  <meta name="keywords" content="Point Cloud, Normal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HSurf-Net</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/style.css">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://LeoQLi.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://LeoQLi.github.io/">
+            HSurf-Net
+          </a>
+          <a class="navbar-item" href="https://LeoQLi.github.io/">
+            SHS-Net
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">HSurf-Net: Normal Estimation for 3D Point Clouds by Learning Hyper Surfaces</h1>
+          <div class="column is-full_width">
+            <h2 class="title is-4">NeurIPS 2022</h2>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Qing Li</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://yushen-liu.github.io/">Yu-Shen Liu</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="http://www.mmrc.iss.ac.cn/~jcheng/">Jin-San Cheng</a><sup>2</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="http://chwang.xmu.edu.cn/index_en.htm">Cheng Wang</a><sup>3</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/yi-fang.html">Yi Fang</a><sup>4</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://h312h.github.io/">Zhizhong Han</a><sup>5</sup>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Tsinghua University,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Chinese Academy of Sciences,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>3</sup>Xiamen University,</span>&nbsp;&nbsp;
+            <br>
+            <span class="author-block"><sup>4</sup>New York University Abu Dhabi,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>5</sup>Wayne State University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2210.07158.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/LeoQLi/HSurf-Net"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1F1LwZEzvupztCeXEtlMJ1zOrV-EOoZTT/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supp</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/1eNpDh5ivE7Ap1HkqCMbRZpVKMQB1TQ6H?usp=share_link"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <img src="./images/intro.png" class="center">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose a novel normal estimation method called HSurf-Net, which can accurately predict normals from point clouds with noise and density variations. Previous methods focus on learning point weights to fit neighborhoods into a geometric surface approximated by a polynomial function with a predefined order, based on which normals are estimated. However, fitting surfaces explicitly from raw point clouds suffers from overfitting or underfitting issues caused by inappropriate polynomial orders and outliers, which significantly limits the performance of existing methods. To address these issues, we introduce hyper surface fitting to implicitly learn hyper surfaces, which are represented by multi-layer perceptron (MLP) layers that take point features as input and output surface patterns in a high dimensional feature space. We introduce a novel space transformation module, which consists of a sequence of local aggregation layers and global shift layers, to learn an optimal feature space, and a relative position encoding module to effectively convert point clouds into the learned feature space. Our model learns hyper surfaces from the noise-less features and directly predicts normal vectors. We jointly optimize the MLP weights and module parameters in a data-driven manner to make the model adaptively find the most suitable surface pattern for various points. Experimental results show that our HSurf-Net achieves the state-of-the-art performance on the synthetic shape dataset, the real-world indoor and outdoor scene datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="publication-video">
+          <iframe src="./videos/intro.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Method</h2>
+        <img src="./images/net.png">
+        <p style="font-size: large;">
+          <b>
+            The architecture of HSurf-Net for point cloud normal estimation.
+          </b>
+          The Space Transformation module extracts a global location code `G` for each point.
+          The local frames are formulated at point `p_{i}` based on spatial coordinates and are used to compute a condition code `C` by a Relative Position Encoding module.
+          Then, we perform the hyper surface fitting in a high dimensional feature space.
+          Finally, we recover the 3D normal vectors from fitting results by an Output Module.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!--/ Paper video. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Results</h2>
+        <div class="publication-video">
+          <iframe src="./videos/demo.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <h3 class="title is-4" style="margin-top: 30px;">Normal Visualization</h3>
+        <img src="./images/small_case.png" class="center">
+
+        <h3 class="title is-4" style="margin-top: 30px;">Normal RMSE</h3>
+        <img src="./images/error_pcpnet_scenenn.png" class="center">
+
+        <h3 class="title is-4" style="margin-top: 30px;">Surface Reconstruction</h3>
+        <img src="./images/reconstruction.png" class="center">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -20px">Demo</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-centered">
+    <div class="view-3D">
+      <!-- <p class="view-3D-title">
+        Semantic3D Dataset:
+      </p> -->
+      <div>
+        <table class="dataintable">
+        <tr>
+          <th style="width:50%;">Point Cloud</th>
+          <th style="width:50%;">Mesh</th>
+        </tr>
+        <tr>
+          <td>
+            <model-viewer
+              bounds="tight"
+              enable-pan
+              src="./objects/stgallencathedral_station1_pc.glb"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              shadow-intensity="1"
+              camera-orbit="auto auto 180deg"
+            />
+          </td>
+          <td>
+            <model-viewer
+              bounds="tight"
+              enable-pan
+              src="./objects/stgallencathedral_station1_mesh.glb"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              shadow-intensity="1"
+              camera-orbit="auto auto 180deg"
+            />
+          </td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre>
+      <code>
+        @article{li2022hsurf,
+          title={{HSurf-Net}: Normal Estimation for {3D} Point Clouds by Learning Hyper Surfaces},
+          author={Li, Qing and Liu, Yu-Shen and Cheng, Jin-San and Wang, Cheng and Fang, Yi and Han, Zhizhong},
+          journal={Advances in Neural Information Processing Systems (NeurIPS)},
+          year={2022}
+        }
+      </code>
+    </pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <p>
+        This webpage template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
