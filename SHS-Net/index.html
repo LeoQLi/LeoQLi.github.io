@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Some results of SHS-Net for point cloud normal estimation">
+  <meta name="keywords" content="Point Cloud, Normal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHS-Net</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/style.css">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://LeoQLi.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://leoqli.github.io/HSurf-Net/">
+            HSurf-Net
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/SHS-Net/">
+            SHS-Net
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">SHS-Net: Learning Signed Hyper Surfaces for Oriented Normal Estimation of Point Clouds</h1>
+          <div class="column is-full_width">
+            <h2 class="title is-4">CVPR 2023</h2>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Qing Li</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              Huifang Feng<sup>2</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              Kanle Shi<sup>3</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=UTDfWocAAAAJ&hl=en">Yue Gao</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/yi-fang.html">Yi Fang</a><sup>4</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://yushen-liu.github.io/">Yu-Shen Liu</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://h312h.github.io/">Zhizhong Han</a><sup>5</sup>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Tsinghua University,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Xiamen University,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>3</sup>Kuaishou Technology,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>4</sup>New York University Abu Dhabi,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>5</sup>Wayne State University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/LeoQLi/SHS-Net"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supp</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-centered">
+          <img src="./images/intro_orientedNormal.png" class="center" width="70%">
+          <p style="font-size: large;">
+            We propose SHS-Net to estimate oriented normals directly from point clouds.
+            In contrast, previous studies usually achieve this process through a two-stage paradigm using different algorithms,
+            i.e., (1) unoriented normal estimation (e.g., PCA, AdaFit and HSurf-Net) and (2) normal orientation (e.g., MST, QPBO and ODP).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose a novel method called SHS-Net for oriented normal estimation of point clouds by learning signed hyper surfaces, which can accurately predict normals with global consistent orientation from various point clouds. Almost all existing methods estimate oriented normals through a two-stage pipeline, i.e., unoriented normal estimation and normal orientation, and each step is implemented by a separate algorithm. However, previous methods are sensitive to parameter settings, resulting in poor results from point clouds with noise, density variations and complex geometries. In this work, we introduce signed hyper surfaces (SHS), which are parameterized by multi-layer perceptron (MLP) layers, to learn to estimate oriented normals from point clouds in an end-to-end manner. The signed hyper surfaces are implicitly learned in a high-dimensional feature space where the local and global information is aggregated. Specifically, we introduce a patch encoding module and a shape encoding module to encode a 3D point cloud into a local latent code and a global latent code, respectively. Then, an attention-weighted normal prediction module is proposed as a decoder, which takes the local and global latent codes as input to predict oriented normals. Experimental results show that our SHS-Net outperforms the state-of-the-art methods in both unoriented and oriented normal estimation on the widely used benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Method</h2>
+        <img src="./images/net.png">
+        <p style="font-size: large;">
+          <b>
+            The learning pipeline of the signed hyper surfaces for oriented normal estimation.
+          </b>
+          We propose to implicitly learn signed hyper surfaces in the feature space for estimating oriented normals.
+          This new surface representation is learned from patch encoding and shape encoding using our designed loss functions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Results</h2>
+        <div class="publication-video">
+          <iframe src="./videos/demo.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <h3 class="title is-4" style="margin-top: 30px;">Normal RMSE</h3>
+        <img src="./images/errorMap.png" class="center">
+
+        <h3 class="title is-4" style="margin-top: 30px;">Surface Reconstruction</h3>
+        <img src="./images/KITTI_06_700.png" class="center">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -20px">Demo</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-centered">
+    <div class="view-3D">
+      <!-- <p class="view-3D-title">
+        Semantic3D Dataset:
+      </p> -->
+      <div>
+        <table class="dataintable">
+        <tr>
+          <th style="width:50%;">Object</th>
+          <th style="width:50%;">Scene</th>
+        </tr>
+        <tr>
+          <td>
+            <model-viewer
+              bounds="tight"
+              enable-pan
+              src="./objects/06_600.glb"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              shadow-intensity="1"
+              camera-orbit="auto auto 180deg"
+            />
+          </td>
+          <td>
+            <model-viewer
+              bounds="tight"
+              enable-pan
+              src="./objects/06_700.glb"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              shadow-intensity="1"
+              camera-orbit="auto auto 180deg"
+            />
+          </td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre>
+      <code>
+        @article{li2023shsnet,
+          title={{SHS-Net}: Learning Signed Hyper Surfaces for Oriented Normal Estimation of Point Clouds},
+          author={Li, Qing and Feng, Huifang and Shi, Kanle and Gao, Yue and Fang, Yi and Liu, Yu-Shen and Han, Zhizhong},
+          journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+          year={2023}
+        }
+      </code>
+    </pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <p>
+        This webpage template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
