@@ -124,7 +124,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href=""
+                <a href="xxx"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -142,7 +142,7 @@
                   </a>
               </span>
               <span class="link-block">
-                <a href=""
+                <a href="https://drive.google.com/file/d/14JMlS62uogc5yooYBzo81zO2eu6ohfd2/view?usp=sharing"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -151,7 +151,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href=""
+                <a href="https://drive.google.com/drive/folders/1eNpDh5ivE7Ap1HkqCMbRZpVKMQB1TQ6H?usp=share_link"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
@@ -221,10 +221,24 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">FamousShape Dataset</h2>
+        <img src="./images/FamousShape.png">
+        <p style="font-size: large;">
+          This dataset can be download from <a href="https://drive.google.com/drive/folders/1eNpDh5ivE7Ap1HkqCMbRZpVKMQB1TQ6H?usp=share_link">here</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Results</h2>
         <div class="publication-video">
-          <iframe src="./videos/demo.mp4"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <iframe src="./videos/demo.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          <video controlslist="nodownload" controls src="./videos/demo.mp4" type="video/mp4"></video>
         </div>
 
         <h3 class="title is-4" style="margin-top: 30px;">Normal RMSE</h3>
@@ -294,10 +308,10 @@
     <h2 class="title">BibTeX</h2>
     <pre>
       <code>
-        @article{li2023shsnet,
+        @inproceedings{li2023shsnet,
           title={{SHS-Net}: Learning Signed Hyper Surfaces for Oriented Normal Estimation of Point Clouds},
           author={Li, Qing and Feng, Huifang and Shi, Kanle and Gao, Yue and Fang, Yi and Liu, Yu-Shen and Han, Zhizhong},
-          journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+          booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
           year={2023}
         }
       </code>
