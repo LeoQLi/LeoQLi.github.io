@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Some results of SHS-Net for point cloud normal estimation">
+        content="Some results of point cloud normal estimation">
   <meta name="keywords" content="Point Cloud, Normal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SHS-Net</title>
@@ -25,21 +25,21 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/style.css">
+  <link rel="stylesheet" href="../static/style.css">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="../static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
 
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
@@ -72,6 +72,12 @@
           </a>
           <a class="navbar-item" href="https://leoqli.github.io/SHS-Net/">
             SHS-Net
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/NGLO/">
+            NGLO
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/NeuralGF/">
+            NeuralGF
           </a>
         </div>
       </div>
@@ -171,8 +177,10 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <div class="content has-text-centered">
+        <!-- <div class="content has-text-centered"> -->
+        <div style="text-align: center;">
           <img src="./images/intro_orientedNormal.png" class="center" width="70%">
+        </div>
           <p style="font-size: large;">
             We propose SHS-Net to estimate oriented normals directly from point clouds.
             In contrast, previous studies usually achieve this process through a two-stage paradigm using different algorithms,
@@ -212,6 +220,9 @@
           We propose to implicitly learn signed hyper surfaces in the feature space for estimating oriented normals.
           This new surface representation is learned from patch encoding and shape encoding using our designed loss functions.
         </p>
+        <div class="publication-video" style="margin-top: 15px">
+          <iframe src="https://www.youtube.com/embed/9DHAkjsnVYo?si=VnTPjLsTgW64n1OL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -237,15 +248,14 @@
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Results</h2>
         <div class="publication-video">
-          <!-- <iframe src="./videos/demo.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-          <video controlslist="nodownload" controls src="./videos/demo.mp4" type="video/mp4"></video>
+          <video controlslist="nodownload" controls src="./videos/SHS-Net_demo.mp4" type="video/mp4"></video>
         </div>
 
         <h3 class="title is-4" style="margin-top: 30px;">Normal RMSE</h3>
-        <img src="./images/errorMap.png" class="center">
+        <img src="./images/errorMap.jpg" class="center">
 
         <h3 class="title is-4" style="margin-top: 30px;">Surface Reconstruction</h3>
-        <img src="./images/KITTI_06_700.png" class="center">
+        <img src="./images/KITTI_06_700.jpg" class="center">
       </div>
     </div>
   </div>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Some results of point cloud normal estimation">
+  <meta name="keywords" content="Point Cloud, Normal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NGLO</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/style.css">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://LeoQLi.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://leoqli.github.io/HSurf-Net/">
+            HSurf-Net
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/SHS-Net/">
+            SHS-Net
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/NGLO/">
+            NGLO
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/NeuralGF/">
+            NeuralGF
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Neural Gradient Learning and Optimization for Oriented Point Normal Estimation</h1>
+          <div class="column is-full_width">
+            <h2 class="title is-4">SIGGRAPH Asia 2023</h2>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Qing Li</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              Huifang Feng<sup>2</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              Kanle Shi<sup>3</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/yi-fang.html">Yi Fang</a><sup>4</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://yushen-liu.github.io/">Yu-Shen Liu</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://h312h.github.io/">Zhizhong Han</a><sup>5</sup>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Tsinghua University,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Xiamen University,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>3</sup>Kuaishou Technology,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>4</sup>New York University Abu Dhabi,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>5</sup>Wayne State University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2309.09211"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/LeoQLi/NGLO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <!-- <div class="content has-text-centered"> -->
+        <div style="text-align: center;">
+          <img src="./images/intro.jpg" class="center" width="80%">
+        </div>
+          <p style="font-size: large;">
+            For oriented normal estimation, previous methods usually conduct a two-stage pipeline, i.e., (1) unoriented normal estimation and (2) normal orientation, while our method achieves this through Neural Gradient Learning (NGL) and Gradient Vector Optimization (GVO). We introduce effective novel designs into our method that enable it to improve the SOTA results.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose Neural Gradient Learning (NGL), a deep learning approach to learn gradient vectors with consistent orientation from 3D point clouds for normal estimation. It has excellent gradient approximation properties for the underlying geometry of the data. We utilize a simple neural network to parameterize the objective function to produce gradients at points using a global implicit representation. However, the derived gradients usually drift away from the ground-truth oriented normals due to the lack of local detail descriptions. Therefore, we introduce Gradient Vector Optimization (GVO) to learn an angular distance field based on local plane geometry to refine the coarse gradient vectors. Finally, we formulate our method with a two-phase pipeline of coarse estimation followed by refinement. Moreover, we integrate two weighting functions, i.e., anisotropic kernel and inlier score, into the optimization to improve the robust and detail-preserving performance. Our method efficiently conducts global gradient approximation while achieving better accuracy and generalization ability of local feature description. This leads to a state-of-the-art normal estimator that is robust to noise, outliers and point density variations. Extensive evaluations show that our method outperforms previous works in both unoriented and oriented normal estimation on widely used benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Method</h2>
+        <div style="text-align: center;">
+          <img src="./images/network.jpg" class="center" width="80%">
+        </div>
+        <p style="font-size: large;">
+          <b>
+            Overview of our method.
+          </b>
+          (a-c): The neural gradient learning function `f` takes a point cloud P as input and derives point-wise gradient `∇f` within the network based on neighboring regions of the surface.
+          (d-f): The gradient vector optimization function `g` selects the optimal vector sample according to angular distance as the normal `n`.
+        </p>
+        <div class="publication-video" style="margin-top: 15px">
+          <video controlslist="nodownload" controls src="./videos/NGLO.mp4" type="video/mp4"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Results</h2>
+        <div class="publication-video">
+          <video controlslist="nodownload" controls src="./videos/NGLO_demo.mp4" type="video/mp4"></video>
+        </div>
+
+        <h3 class="title is-4" style="margin-top: 50px;">Normal RMSE</h3>
+        <img src="./images/gradient.jpg" class="center" width="90%">
+        <img src="./images/error_map.jpg" class="center" width="90%" style="margin-top: 20px">
+
+        <h3 class="title is-4" style="margin-top: 30px;">Surface Reconstruction</h3>
+        <img src="./images/recon_1.jpg" class="center">
+        <img src="./images/recon_2.jpg" class="center" width="90%" style="margin-top: 20px">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -30px">Demo</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-centered">
+    <div class="view-3D">
+      <!-- <p class="view-3D-title">
+        Semantic3D Dataset:
+      </p> -->
+      <div>
+        <table class="dataintable">
+        <tr>
+          <th style="width:50%;">Scene 1</th>
+          <th style="width:50%;">Scene 2</th>
+        </tr>
+        <tr>
+          <td>
+            <model-viewer
+              bounds="tight"
+              enable-pan
+              src="./objects/GT_Madame1_3.glb"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              shadow-intensity="1"
+              camera-orbit="auto auto 180deg"
+            />
+          </td>
+          <td>
+            <model-viewer
+              bounds="tight"
+              enable-pan
+              src="./objects/065.glb"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              shadow-intensity="1"
+              camera-orbit="auto auto 180deg"
+            />
+          </td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre>
+      <code>
+        @inproceedings{li2023neural,
+          title={Neural Gradient Learning and Optimization for Oriented Point Normal Estimation},
+          author={Li, Qing and Feng, Huifang and Shi, Kanle and Fang, Yi and Liu, Yu-Shen and Han, Zhizhong},
+          booktitle={SIGGRAPH Asia 2023 Conference Papers},
+          year={2023}
+        }
+      </code>
+    </pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <p>
+        This webpage template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
