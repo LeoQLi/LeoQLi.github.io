@@ -1,0 +1,37 @@
+qing:
+  first_name: Qing
+  last_name: Li
+  website: https://leoqli.github.io
+  is_me: true
+yushen:
+  first_name: Yu-Shen
+  last_name: Liu
+  website: https://yushen-liu.github.io/
+zhizhong:
+  first_name: Zhizhong
+  last_name: Han
+  website: https://h312h.github.io/
+yi:
+  first_name: Yi
+  last_name: Fang
+  website: https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/yi-fang.html
+jinsan:
+  first_name: Jin-San
+  last_name: Cheng
+  website: http://www.mmrc.iss.ac.cn/~jcheng/
+cwang:
+  first_name: Cheng
+  last_name: Wang
+  website: https://scholar.google.com/citations?user=kAnv3SkAAAAJ
+huifang:
+  first_name: Huifang
+  last_name: Feng
+  website:
+kanle:
+  first_name: Kanle
+  last_name: Shi
+  website:
+yue:
+  first_name: Yue
+  last_name: Gao
+  website: https://scholar.google.com/citations?user=UTDfWocAAAAJ&hl=en

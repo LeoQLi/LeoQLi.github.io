@@ -1,0 +1,59 @@
+- id: NeuralGF
+  title: "NeuralGF: Unsupervised Point Normal Estimation by Learning Neural Gradient Function"
+  venue: NeurIPS, 2023
+  project_page: "https://leoqli.github.io/NeuralGF/"
+  arxiv: 2311.00389
+  image: NeuralGF.jpg
+  authors:
+    - qing
+    - huifang
+    - kanle
+    - yue
+    - yi
+    - yushen
+    - zhizhong
+
+- id: NGLO
+  title: "Neural Gradient Learning and Optimization for Oriented Point Normal Estimation"
+  venue: SIGGRAPH Asia, 2023
+  project_page: "https://github.com/LeoQLi/NGLO/"
+  arxiv: 2309.09211
+  image: NGLO.jpg
+  authors:
+    - qing
+    - huifang
+    - kanle
+    - yi
+    - yushen
+    - zhizhong
+
+- id: SHS-Net
+  title: "SHS-Net: Learning Signed Hyper Surfaces for Oriented Normal Estimation of Point Clouds"
+  venue: CVPR, 2023
+  project_page: "https://leoqli.github.io/SHS-Net/"
+  arxiv: 2305.05873
+  image: SHS-Net.png
+  authors:
+    - qing
+    - huifang
+    - kanle
+    - yue
+    - yi
+    - yushen
+    - zhizhong
+
+- id: HSurf-Net
+  title: "HSurf-Net: Normal Estimation for 3D Point Clouds by Learning Hyper Surfaces"
+  venue: NeurIPS, 2022
+  project_page: "https://github.com/LeoQLi/HSurf-Net/"
+  arxiv: 2210.07158
+  image: HSurf-Net.png
+  authors:
+    - qing
+    - yushen
+    - jinsan
+    - cwang
+    - yi
+    - zhizhong
+
+
