@@ -24,8 +24,10 @@ position: Postdoc
 email: qingleoli@gmail.com
 description: >-
   I am a postdoctor at [School of Software, Tsinghua University](https://www.thss.tsinghua.edu.cn/).
-
   Previously, I was a Ph.D student at the [School of Informatics, Xiamen University](https://informatics.xmu.edu.cn/).
+
+
+  My research interests include 3D computer vision and point cloud processing.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "leoqli.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
