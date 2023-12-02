@@ -1,4 +1,4 @@
-# leoqli.github.io
+This is the source code to Jon Barron's public academic website: https://leoqli.github.io/
 
 - Feel free to borrow this template.
 - Make sure to update all relevant fields in `_config.yml` and `_data`.
