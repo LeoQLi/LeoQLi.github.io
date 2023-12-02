@@ -124,9 +124,11 @@ layout: null
                 {% if author.is_me %}
                   {{ author.first_name }} {{ author.middle_name }} {{ author.last_name }}{% if forloop.last == false %},{% endif %}
                 {% else %}
-                  {% if typeof(author.website) != "undefined" %}
-                    <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                      }}</a>{% if forloop.last == false %},{% endif %}
+                  {% if author.website %}
+                    <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name}}
+                    </a>{% if forloop.last == false %},{% endif %}
+                  {% else %}
+                    {{ author.first_name }} {{ author.middle_name }} {{ author.last_name }}{% if forloop.last == false %},{% endif %}
                   {% endif %}
                 {% endif %}
               </span>
@@ -140,31 +142,31 @@ layout: null
             </div>
             <!-- <p class="publication-description">{{ publication.description }}</p> -->
             <div class="publication-links buttons field has-addons">
-              {% if typeof(publication.project_page) != "undefined" %}
+              {% if publication.project_page %}
               <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
                 <span class="icon"><i class="fas fa-globe-asia"></i></span>
                 <span>Project Page</span>
               </a>
               {% endif %}
-              {% if typeof(publication.arxiv) != "undefined" %}
+              {% if publication.arxiv %}
               <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>PDF</span>
               </a>
               {% endif %}
-              {% if typeof(publication.arxiv) != "undefined" %}
+              {% if publication.arxiv %}
               <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/{{ publication.arxiv }}">
                 <span class="icon"><i class="ai ai-arxiv"></i></span>
                 <span>arXiv</span>
               </a>
               {% endif %}
-              {% if typeof(publication.link) != "undefined" %}
+              {% if publication.link %}
               <a class="external-link button is-small is-ghost" href="{{ publication.link }}">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>Paper</span>
               </a>
               {% endif %}
-              {% if typeof(publication.github) != "undefined" %}
+              {% if publication.github %}
               <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
                 <span class="icon"><i class="fa fab fa-github"></i></span>
                 <span>Code</span>
