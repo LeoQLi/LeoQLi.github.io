@@ -116,7 +116,7 @@ layout: null
 
         <div class="column">
           <div class="content">
-            <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
+            <h3 class="publication-title">{{ publication.title }}</h3>
             <div class="publication-authors">
               {% for author_id in publication.authors %}
               {% assign author = site.data.authors[author_id] %}
@@ -162,7 +162,7 @@ layout: null
               {% endif %}
               {% if publication.link %}
               <a class="external-link button is-small is-ghost" href="{{ publication.link }}">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span class="icon"><i class="fas fa-file"></i></span>
                 <span>Paper</span>
               </a>
               {% endif %}
