@@ -26,12 +26,62 @@ cwang:
 huifang:
   first_name: Huifang
   last_name: Feng
-  website:
+  website: https://dblp.org/pid/65/5023-2.html
 kanle:
   first_name: Kanle
   last_name: Shi
-  website:
 yue:
   first_name: Yue
   last_name: Gao
-  website: https://scholar.google.com/citations?user=UTDfWocAAAAJ&hl=en
+  website: https://scholar.google.com/citations?user=UTDfWocAAAAJ
+hai:
+  first_name: Hai
+  last_name: Wu
+chenglu:
+  first_name: Chenglu
+  last_name: Wen
+  website: https://scholar.google.com/citations?user=JOoZUmUAAAAJ
+xin:
+  first_name: Xin
+  last_name: Li
+  website: https://people.tamu.edu/~xinli/
+xiaoliang:
+  first_name: Xiaoliang
+  last_name: Fan
+shaoyang:
+  first_name: Shaoyang
+  last_name: Chen
+ming:
+  first_name: Ming
+  last_name: Cheng
+jonathan:
+  first_name: Jonathan
+  last_name: Li
+  website: https://scholar.google.com/citations?user=7hyYxRkAAAAJ
+wenkai:
+  first_name: Wenkai
+  last_name: Han
+shiwei:
+  first_name: Shiwei
+  last_name: Hou
+zheng:
+  first_name: Zheng
+  last_name: Gong
+xiaotian:
+  first_name: Xiaotian
+  last_name: Sun
+shanxin:
+  first_name: Shanxin
+  last_name: Zhang
+zijian:
+  first_name: Zijian
+  last_name: He
+xiuhong:
+  first_name: Xiuhong
+  last_name: Lin
+juyong:
+  first_name: Juyong
+  last_name: Zhang
+chenhui:
+  first_name: Chenhui
+  last_name: Yang

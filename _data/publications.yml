@@ -60,4 +60,93 @@
     - yi
     - zhizhong
 
+- id: Tracklet
+  title: "Tracklet Proposal Network for Multi-Object Tracking on Point Clouds"
+  venue: IJCAI, 2021
+  link: https://doi.org/10.24963/ijcai.2021/161
+  image: Tracklet.jpg
+  authors:
+    - hai
+    - qing
+    - chenglu
+    - xin
+    - xiaoliang
+    - cwang
 
+- id: DeepSIR
+  title: "DeepSIR: Deep Semantic Iterative Registration for LiDAR Point Clouds"
+  venue: Pattern Recognition
+  link: https://doi.org/10.1016/j.patcog.2023.109306
+  image: DeepSIR.jpg
+  authors:
+    - qing
+    - cwang
+    - chenglu
+    - xin
+
+- id: FeatFlow
+  title: "FeatFlow: Learning Geometric Features for 3D Motion Estimation"
+  venue: Pattern Recognition
+  link: https://doi.org/10.1016/j.patcog.2020.107574
+  image: FeatFlow.jpg
+  authors:
+    - qing
+    - cwang
+    - xin
+    - chenglu
+
+- id: Point2Node
+  title: "Point2Node: Correlation Learning of Dynamic-Node for Point Cloud Feature Modeling"
+  venue: AAAI, 2020
+  link: https://doi.org/10.1609/aaai.v34i07.6725
+  image: Point2Node.jpg
+  authors:
+    - wenkai
+    - chenglu
+    - cwang
+    - xin
+    - qing
+
+- id: Vehicle
+  title: "Vehicle Global 6-DoF Pose Estimation Under Traffic Surveillance Camera"
+  venue: ISPRS Journal of Photogrammetry and Remote Sensing
+  link: https://doi.org/10.1016/j.isprsjprs.2019.11.005
+  image: Vehicle.jpg
+  authors:
+    - shanxin
+    - cwang
+    - zijian
+    - qing
+    - xiuhong
+    - xin
+    - juyong
+    - chenghui
+    - jonathan
+
+- id: LO-Net
+  title: "LO-Net: Deep Real-Time Lidar Odometry"
+  venue: CVPR, 2019
+  arxiv: 1904.08242
+  image: LO-Net.jpg
+  authors:
+    - qing
+    - shaoyang
+    - cwang
+    - xin
+    - chenglu
+    - ming
+    - jonathan
+
+- id: Semantic
+  title: "Semantic Line Framework-based Indoor Building Modeling Using Backpacked Laser Scanning Point Cloud"
+  venue: ISPRS Journal of Photogrammetry and Remote Sensing
+  link: https://doi.org/10.1016/j.isprsjprs.2018.03.025
+  image: Semantic.jpg
+  authors:
+    - cwang
+    - shiwei
+    - chenglu
+    - zheng
+    - qing
+    - xiaotian
+    - jonathan
