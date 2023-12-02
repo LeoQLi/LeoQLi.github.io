@@ -1,4 +1,6 @@
-This is the source code to the public academic website: https://leoqli.github.io/
+Here is the source code for my public academic website: https://leoqli.github.io/.
+
+This repo is built on a fork of [this repository](https://github.com/keunhong/keunhong.github.io).
 
 - Feel free to borrow this template.
 - Make sure to update all relevant fields in `_config.yml` and `_data`.

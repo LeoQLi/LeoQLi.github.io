@@ -17,7 +17,7 @@
 - id: NGLO
   title: "Neural Gradient Learning and Optimization for Oriented Point Normal Estimation"
   venue: SIGGRAPH Asia, 2023
-  project_page: "https://leoqli.github.com/NGLO/"
+  project_page: "https://leoqli.github.io/NGLO/"
   github: LeoQLi/NGLO
   arxiv: 2309.09211
   image: NGLO.jpg
@@ -48,7 +48,7 @@
 - id: HSurf-Net
   title: "HSurf-Net: Normal Estimation for 3D Point Clouds by Learning Hyper Surfaces"
   venue: NeurIPS, 2022
-  project_page: "https://leoqli.github.com/HSurf-Net/"
+  project_page: "https://leoqli.github.io/HSurf-Net/"
   github: LeoQLi/HSurf-Net
   arxiv: 2210.07158
   image: HSurf-Net.png
