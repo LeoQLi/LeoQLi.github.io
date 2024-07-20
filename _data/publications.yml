@@ -1,3 +1,19 @@
+- id: SHS-Net
+  title: "Learning Signed Hyper Surfaces for Oriented Point Cloud Normal Estimation"
+  venue: TPAMI, 2024
+  project_page: "https://leoqli.github.io/SHS-Net/"
+  github: LeoQLi/SHS-Net
+  # arxiv: 2305.05873
+  image: SHS-Net-pami.png
+  authors:
+    - qing
+    - huifang
+    - kanle
+    - yue
+    - yi
+    - yushen
+    - zhizhong
+
 - id: NeuralGF
   title: "NeuralGF: Unsupervised Point Normal Estimation by Learning Neural Gradient Function"
   venue: NeurIPS, 2023
