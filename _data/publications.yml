@@ -1,9 +1,9 @@
-- id: SHS-Net
+- id: SHS-Net-pami
   title: "Learning Signed Hyper Surfaces for Oriented Point Cloud Normal Estimation"
   venue: TPAMI, 2024
   project_page: "https://leoqli.github.io/SHS-Net/"
   github: LeoQLi/SHS-Net
-  # arxiv: 2305.05873
+  arxiv: 2305.05873v2
   image: SHS-Net-pami.png
   authors:
     - qing
@@ -50,7 +50,7 @@
   venue: CVPR, 2023
   project_page: "https://leoqli.github.io/SHS-Net/"
   github: LeoQLi/SHS-Net
-  arxiv: 2305.05873
+  arxiv: 2305.05873v1
   image: SHS-Net.png
   authors:
     - qing
