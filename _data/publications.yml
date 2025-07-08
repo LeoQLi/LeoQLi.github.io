@@ -1,3 +1,16 @@
+- id: LGSF
+  title: "Learning Normals of Noisy Points by Local Gradient-Aware Surface Filtering"
+  venue: ICCV, 2025
+  project_page: "https://leoqli.github.io/LGSF/"
+  github: LeoQLi/LGSF
+  arxiv: 2507.03394
+  image: LGSF.jpg
+  authors:
+    - qing
+    - huifang
+    - gongxun
+    - yushen
+
 - id: SHS-Net-pami
   title: "Learning Signed Hyper Surfaces for Oriented Point Cloud Normal Estimation"
   venue: TPAMI, 2024

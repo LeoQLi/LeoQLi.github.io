@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Some results of point cloud normal estimation">
+  <meta name="keywords" content="Point Cloud, Normal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LGSF</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/style.css">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.7.7/MathJax.js?config=AM_HTMLorMML-full"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+    });
+  </script>
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://LeoQLi.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://leoqli.github.io/HSurf-Net/">
+            HSurf-Net
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/SHS-Net/">
+            SHS-Net
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/NGLO/">
+            NGLO
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/NeuralGF/">
+            NeuralGF
+          </a>
+          <a class="navbar-item" href="https://leoqli.github.io/LGSF/">
+            LGSF
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero" style="margin-top: -30px">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Learning Normals of Noisy Points by Local Gradient-Aware Surface Filtering</h1>
+          <div class="column is-full_width">
+            <h2 class="title is-4">ICCV 2025</h2>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://leoqli.github.io/">Qing Li</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              Huifang Feng<sup>2</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://faculty.swjtu.edu.cn/gongxun/zh_CN/index.htm">Xun Gong</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://yushen-liu.github.io/">Yu-Shen Liu</a><sup>3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Southwest Jiaotong University,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Xihua University,</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>3</sup>Tsinghua University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2507.03394"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/LeoQLi/LGSF"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="margin-top: -50px">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Estimating normals for noisy point clouds is a persistent challenge in 3D geometry processing, particularly for end-to-end oriented normal estimation. Existing methods generally address relatively clean data and rely on supervised priors to fit local surfaces within specific neighborhoods. In this paper, we propose a novel approach for learning normals from noisy point clouds through local gradient-aware surface filtering. Our method projects noisy points onto the underlying surface by utilizing normals and distances derived from an implicit function constrained by local gradients. We start by introducing a distance measurement operator for global surface fitting on noisy data, which integrates projected distances along normals. Following this, we develop an implicit field-based filtering approach for surface point construction, adding projection constraints on these points during filtering. To address issues of over-smoothing and gradient degradation, we further incorporate local gradient consistency constraints, as well as local gradient orientation and aggregation. Comprehensive experiments on normal estimation, surface reconstruction, and point cloud denoising demonstrate the state-of-the-art performance of our method.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="margin-top: -50px">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Method</h2>
+
+        <div style="text-align: center;">
+          <img src="./images/overview.jpg" class="center" width="80%">
+        </div>
+        <p style="font-size: large;">
+          <b>
+            Overview of our method.
+          </b>
+          It can be used for different tasks such as surface reconstruction, point cloud denoising, and normal
+          estimation without the need for training labels.
+        </p>
+        </div> </div>
+
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column">
+              <div class="content">
+                <img src="./images/dis.jpg" class="center" style="margin-top: 0px">
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content">
+                <img src="./images/grad.jpg" class="center" style="margin-top: 0px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="margin-top: -50px">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Results</h2>
+
+        <h3 class="title is-5" style="margin-top: 30px;">Normal RMSE</h3>
+        <img src="./images/normal_error.jpg" class="center" style="margin-top: 0px">
+        <p style="font-size: large;">
+          Visual comparison of oriented normals on two point clouds with complex geometry. Colors indicate normal errors.
+        </p>
+
+        <h3 class="title is-5" style="margin-top: 30px;">Surface Reconstruction</h3>
+        <img src="./images/surf_recon.jpg" class="center" style="margin-top: 0px">
+        <p style="font-size: large;">
+          Visual comparison of reconstructed surfaces. As the noise increases (from low to high), our method becomes more advantageous.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX" style="margin-top: -50px">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre>
+      <code>
+  @inproceedings{li2025LGSF,
+    title={Learning Normals of Noisy Points by Local Gradient-Aware Surface Filtering},
+    author={Li, Qing and Feng, Huifang and Gong, Xun and Liu, Yu-Shen},
+    booktitle={International Conference on Computer Vision (ICCV)},
+    year={2025}
+  }
+      </code>
+    </pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <p>
+        This webpage template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
