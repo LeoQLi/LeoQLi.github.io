@@ -1,6 +1,6 @@
 - id: LGSF
   title: "Learning Normals of Noisy Points by Local Gradient-Aware Surface Filtering"
-  venue: ICCV, 2025
+  venue: International Conference on Computer Vision (ICCV), 2025
   project_page: "https://leoqli.github.io/LGSF/"
   github: LeoQLi/LGSF
   arxiv: 2507.03394
@@ -13,7 +13,7 @@
 
 - id: SHS-Net-pami
   title: "Learning Signed Hyper Surfaces for Oriented Point Cloud Normal Estimation"
-  venue: TPAMI, 2024
+  venue: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Volume 46, Issue 12, December 2024, Pages 9957-9974
   project_page: "https://leoqli.github.io/SHS-Net/"
   github: LeoQLi/SHS-Net
   arxiv: 2305.05873v2
@@ -29,7 +29,7 @@
 
 - id: NeuralGF
   title: "NeuralGF: Unsupervised Point Normal Estimation by Learning Neural Gradient Function"
-  venue: NeurIPS, 2023
+  venue: Conference on Neural Information Processing Systems (NeurIPS), 2023
   project_page: "https://leoqli.github.io/NeuralGF/"
   github: LeoQLi/NeuralGF
   arxiv: 2311.00389
@@ -60,7 +60,7 @@
 
 - id: SHS-Net
   title: "SHS-Net: Learning Signed Hyper Surfaces for Oriented Normal Estimation of Point Clouds"
-  venue: CVPR, 2023
+  venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023
   project_page: "https://leoqli.github.io/SHS-Net/"
   github: LeoQLi/SHS-Net
   arxiv: 2305.05873v1
@@ -76,7 +76,7 @@
 
 - id: HSurf-Net
   title: "HSurf-Net: Normal Estimation for 3D Point Clouds by Learning Hyper Surfaces"
-  venue: NeurIPS, 2022
+  venue: Conference on Neural Information Processing Systems (NeurIPS), 2022
   project_page: "https://leoqli.github.io/HSurf-Net/"
   github: LeoQLi/HSurf-Net
   arxiv: 2210.07158
@@ -91,7 +91,7 @@
 
 - id: Tracklet
   title: "Tracklet Proposal Network for Multi-Object Tracking on Point Clouds"
-  venue: IJCAI, 2021
+  venue: International Joint Conference on Artificial Intelligence (IJCAI), 2021
   link: https://doi.org/10.24963/ijcai.2021/161
   image: Tracklet.jpg
   authors:
@@ -104,7 +104,7 @@
 
 - id: DeepSIR
   title: "DeepSIR: Deep Semantic Iterative Registration for LiDAR Point Clouds"
-  venue: Pattern Recognition
+  venue: Pattern Recognition, Volume 137, May 2023, 109306
   link: https://doi.org/10.1016/j.patcog.2023.109306
   image: DeepSIR.jpg
   authors:
@@ -115,7 +115,7 @@
 
 - id: FeatFlow
   title: "FeatFlow: Learning Geometric Features for 3D Motion Estimation"
-  venue: Pattern Recognition
+  venue: Pattern Recognition, Volume 111, March 2021, 107574
   link: https://doi.org/10.1016/j.patcog.2020.107574
   image: FeatFlow.jpg
   authors:
@@ -126,7 +126,7 @@
 
 - id: Point2Node
   title: "Point2Node: Correlation Learning of Dynamic-Node for Point Cloud Feature Modeling"
-  venue: AAAI, 2020
+  venue: Association for the Advancement of Artificial Intelligence (AAAI), 2020
   link: https://doi.org/10.1609/aaai.v34i07.6725
   image: Point2Node.jpg
   authors:
@@ -139,7 +139,7 @@
 
 - id: Vehicle
   title: "Vehicle Global 6-DoF Pose Estimation Under Traffic Surveillance Camera"
-  venue: ISPRS Journal of Photogrammetry and Remote Sensing
+  venue: ISPRS Journal of Photogrammetry and Remote Sensing, Volume 159, January 2020, Pages 114-128
   link: https://doi.org/10.1016/j.isprsjprs.2019.11.005
   image: Vehicle.jpg
   authors:
@@ -155,7 +155,7 @@
 
 - id: LO-Net
   title: "LO-Net: Deep Real-Time Lidar Odometry"
-  venue: CVPR, 2019
+  venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019
   arxiv: 1904.08242
   image: LO-Net.jpg
   authors:
@@ -169,7 +169,7 @@
 
 - id: Semantic
   title: "Semantic Line Framework-based Indoor Building Modeling Using Backpacked Laser Scanning Point Cloud"
-  venue: ISPRS Journal of Photogrammetry and Remote Sensing
+  venue: ISPRS Journal of Photogrammetry and Remote Sensing, Volume 143, September 2018, Pages 150-166
   link: https://doi.org/10.1016/j.isprsjprs.2018.03.025
   image: Semantic.jpg
   authors:
