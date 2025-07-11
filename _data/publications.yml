@@ -13,7 +13,8 @@
 
 - id: SHS-Net-pami
   title: "Learning Signed Hyper Surfaces for Oriented Point Cloud Normal Estimation"
-  venue: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Volume 46, Issue 12, December 2024, Pages 9957-9974
+  venue: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 12/2024, 46(12):9957-9974
+  link: https://doi.org/10.1109/TPAMI.2024.3431221
   project_page: "https://leoqli.github.io/SHS-Net/"
   github: LeoQLi/SHS-Net
   arxiv: 2305.05873v2
@@ -30,6 +31,7 @@
 - id: NeuralGF
   title: "NeuralGF: Unsupervised Point Normal Estimation by Learning Neural Gradient Function"
   venue: Conference on Neural Information Processing Systems (NeurIPS), 2023
+  link: https://proceedings.neurips.cc/paper_files/paper/2023/hash/d027a5c93d484a4312cc486d399c62c1-Abstract-Conference.html
   project_page: "https://leoqli.github.io/NeuralGF/"
   github: LeoQLi/NeuralGF
   arxiv: 2311.00389
@@ -46,6 +48,7 @@
 - id: NGLO
   title: "Neural Gradient Learning and Optimization for Oriented Point Normal Estimation"
   venue: SIGGRAPH Asia, 2023
+  link: https://doi.org/10.1145/3610548.3618253
   project_page: "https://leoqli.github.io/NGLO/"
   github: LeoQLi/NGLO
   arxiv: 2309.09211
@@ -61,6 +64,7 @@
 - id: SHS-Net
   title: "SHS-Net: Learning Signed Hyper Surfaces for Oriented Normal Estimation of Point Clouds"
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023
+  link: https://doi.org/10.1109/CVPR52729.2023.01306
   project_page: "https://leoqli.github.io/SHS-Net/"
   github: LeoQLi/SHS-Net
   arxiv: 2305.05873v1
@@ -77,6 +81,7 @@
 - id: HSurf-Net
   title: "HSurf-Net: Normal Estimation for 3D Point Clouds by Learning Hyper Surfaces"
   venue: Conference on Neural Information Processing Systems (NeurIPS), 2022
+  link: https://proceedings.neurips.cc/paper_files/paper/2022/hash/1b115b1feab2198dd0881c57b869ddb7-Abstract-Conference.html
   project_page: "https://leoqli.github.io/HSurf-Net/"
   github: LeoQLi/HSurf-Net
   arxiv: 2210.07158
@@ -88,6 +93,17 @@
     - cwang
     - yi
     - zhizhong
+
+- id: DeepSIR
+  title: "DeepSIR: Deep Semantic Iterative Registration for LiDAR Point Clouds"
+  venue: Pattern Recognition, 05/2023, 137:109306
+  link: https://doi.org/10.1016/j.patcog.2023.109306
+  image: DeepSIR.jpg
+  authors:
+    - qing
+    - cwang
+    - chenglu
+    - xin
 
 - id: Tracklet
   title: "Tracklet Proposal Network for Multi-Object Tracking on Point Clouds"
@@ -102,20 +118,9 @@
     - xiaoliang
     - cwang
 
-- id: DeepSIR
-  title: "DeepSIR: Deep Semantic Iterative Registration for LiDAR Point Clouds"
-  venue: Pattern Recognition, Volume 137, May 2023, 109306
-  link: https://doi.org/10.1016/j.patcog.2023.109306
-  image: DeepSIR.jpg
-  authors:
-    - qing
-    - cwang
-    - chenglu
-    - xin
-
 - id: FeatFlow
   title: "FeatFlow: Learning Geometric Features for 3D Motion Estimation"
-  venue: Pattern Recognition, Volume 111, March 2021, 107574
+  venue: Pattern Recognition, 03/2021, 111:107574
   link: https://doi.org/10.1016/j.patcog.2020.107574
   image: FeatFlow.jpg
   authors:
@@ -139,7 +144,7 @@
 
 - id: Vehicle
   title: "Vehicle Global 6-DoF Pose Estimation Under Traffic Surveillance Camera"
-  venue: ISPRS Journal of Photogrammetry and Remote Sensing, Volume 159, January 2020, Pages 114-128
+  venue: ISPRS Journal of Photogrammetry and Remote Sensing, 01/2020, 159:114-128
   link: https://doi.org/10.1016/j.isprsjprs.2019.11.005
   image: Vehicle.jpg
   authors:
@@ -156,6 +161,7 @@
 - id: LO-Net
   title: "LO-Net: Deep Real-Time Lidar Odometry"
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019
+  link: https://doi.org/10.1109/CVPR.2019.00867
   arxiv: 1904.08242
   image: LO-Net.jpg
   authors:
@@ -169,7 +175,7 @@
 
 - id: Semantic
   title: "Semantic Line Framework-based Indoor Building Modeling Using Backpacked Laser Scanning Point Cloud"
-  venue: ISPRS Journal of Photogrammetry and Remote Sensing, Volume 143, September 2018, Pages 150-166
+  venue: ISPRS Journal of Photogrammetry and Remote Sensing, 09/2018, 143:150-166
   link: https://doi.org/10.1016/j.isprsjprs.2018.03.025
   image: Semantic.jpg
   authors:
