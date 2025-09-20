@@ -1,3 +1,15 @@
+- id: VA-GS
+  title: "VA-GS: Enhancing the Geometric Representation of Gaussian Splatting via View Alignment"
+  venue: Conference on Neural Information Processing Systems (NeurIPS), 2025
+  project_page: "https://leoqli.github.io/VA-GS/"
+  github: LeoQLi/VA-GS
+  image: VA-GS.jpg
+  authors:
+    - qing
+    - huifang
+    - gongxun
+    - yushen
+
 - id: LGSF
   title: "Learning Normals of Noisy Points by Local Gradient-Aware Surface Filtering"
   venue: International Conference on Computer Vision (ICCV), 2025
