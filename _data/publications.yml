@@ -3,6 +3,7 @@
   venue: Conference on Neural Information Processing Systems (NeurIPS), 2025
   project_page: "https://leoqli.github.io/VA-GS/"
   github: LeoQLi/VA-GS
+  arxiv: 2510.11473
   image: VA-GS.jpg
   authors:
     - qing
@@ -59,7 +60,7 @@
 
 - id: NGLO
   title: "Neural Gradient Learning and Optimization for Oriented Point Normal Estimation"
-  venue: SIGGRAPH Asia, 2023
+  venue: SIGGRAPH Asia, 12/2023
   link: https://doi.org/10.1145/3610548.3618253
   project_page: "https://leoqli.github.io/NGLO/"
   github: LeoQLi/NGLO

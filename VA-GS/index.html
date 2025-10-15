@@ -2,11 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Some results of point cloud normal estimation">
-  <meta name="keywords" content="Point Cloud, Normal">
+  <meta name="description" content=" ">
+  <meta name="keywords" content=" ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LGSF</title>
+  <title>VA-GS</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -18,22 +17,17 @@
     }
 
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
   <link rel="stylesheet" href="../static/style.css">
-
   <link rel="stylesheet" href="../static/css/bulma.min.css">
   <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="../static/js/fontawesome.all.min.js"></script>
@@ -77,9 +71,9 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">Learning Normals of Noisy Points by Local Gradient-Aware Surface Filtering</h1>
+          <h1 class="title is-2 publication-title">VA-GS: Enhancing the Geometric Representation of Gaussian Splatting via View Alignment</h1>
           <div class="column is-full_width">
-            <h2 class="title is-4">ICCV 2025</h2>
+            <h2 class="title is-4">NeurIPS 2025</h2>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -105,7 +99,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2507.03394"
+                <a href="https://arxiv.org/abs/2510.11473"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -114,7 +108,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/LeoQLi/LGSF"
+                <a href="https://github.com/LeoQLi/VA-GS"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -137,7 +131,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Estimating normals for noisy point clouds is a persistent challenge in 3D geometry processing, particularly for end-to-end oriented normal estimation. Existing methods generally address relatively clean data and rely on supervised priors to fit local surfaces within specific neighborhoods. In this paper, we propose a novel approach for learning normals from noisy point clouds through local gradient-aware surface filtering. Our method projects noisy points onto the underlying surface by utilizing normals and distances derived from an implicit function constrained by local gradients. We start by introducing a distance measurement operator for global surface fitting on noisy data, which integrates projected distances along normals. Following this, we develop an implicit field-based filtering approach for surface point construction, adding projection constraints on these points during filtering. To address issues of over-smoothing and gradient degradation, we further incorporate local gradient consistency constraints, as well as local gradient orientation and aggregation. Comprehensive experiments on normal estimation, surface reconstruction, and point cloud denoising demonstrate the state-of-the-art performance of our method.
+            3D Gaussian Splatting has recently emerged as an efficient solution for high-quality and real-time novel view synthesis. However, its capability for accurate surface reconstruction remains underexplored. Due to the discrete and unstructured nature of Gaussians, supervision based solely on image rendering loss often leads to inaccurate geometry and inconsistent multi-view alignment. In this work, we propose a novel method that enhances the geometric representation of 3D Gaussians through view alignment (VA). Specifically, we incorporate edge-aware image cues into the rendering loss to improve surface boundary delineation. To enforce geometric consistency across views, we introduce a visibility-aware photometric alignment loss that models occlusions and encourages accurate spatial relationships among Gaussians. To further mitigate ambiguities caused by lighting variations, we incorporate normal-based constraints to refine the spatial orientation of Gaussians and improve local surface estimation. Additionally, we leverage deep image feature embeddings to enforce cross-view consistency, enhancing the robustness of the learned geometry under varying viewpoints and illumination. Extensive experiments on standard benchmarks demonstrate that our method achieves state-of-the-art performance in both surface reconstruction and novel view synthesis.
           </p>
         </div>
       </div>
@@ -152,32 +146,47 @@
         <h2 class="title is-3 has-text-centered">Method</h2>
 
         <div style="text-align: center;">
-          <img src="./images/overview.jpg" class="center" width="80%">
+          <img src="./images/VA-GS.jpg" class="center" width="90%">
         </div>
-        <p style="font-size: large;">
-          <b>
+        <!-- <p style="font-size: large;"> -->
+          <!-- <b>
             Overview of our method.
-          </b>
-          It can be used for different tasks such as surface reconstruction, point cloud denoising, and normal
-          estimation without the need for training labels.
-        </p>
-        </div> </div>
-
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column">
-              <div class="content">
-                <img src="./images/dis.jpg" class="center" style="margin-top: 0px">
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="content">
-                <img src="./images/grad.jpg" class="center" style="margin-top: 0px">
-              </div>
-            </div>
-          </div>
-        </div>
+          </b> -->
+            <!-- The training includes five loss functions: $\mathcal{L}_{I}$, $\mathcal{L}_{nc}$, $\mathcal{L}_{ns}$, $\mathcal{L}_{p}$ and $\mathcal{L}_{f}$.
+            The occlusion weight $\omega$, visibility item $\upsilon$ and homography matrix $\bm{H}$ are involved in $\mathcal{L}_{p}$ and $\mathcal{L}_{f}$.
+            The image features $\bm{F}_s$ and $\bm{F}_r$ are extracted using a pretrained network $f$.
+            $\{\bm{K}, \bm{M}\}$ is the intrinsic/extrinsic parameter matrix of the camera view. -->
+            <!-- The training includes five loss functions:
+            <math><mi>𝓛</mi><sub><mi>I</mi></sub></math>,
+            <math><mi>𝓛</mi><sub><mi>nc</mi></sub></math>,
+            <math><mi>𝓛</mi><sub><mi>ns</mi></sub></math>,
+            <math><mi>𝓛</mi><sub><mi>p</mi></sub></math>
+            and
+            <math><mi>𝓛</mi><sub><mi>f</mi></sub></math>.
+            The occlusion weight
+            <math><mi>ω</mi></math>,
+            visibility item
+            <math><mi>υ</mi></math>
+            and homography matrix
+            <math><b><mi>H</mi></b></math>
+            are involved in
+            <math><mi>𝓛</mi><sub><mi>p</mi></sub></math>
+            and
+            <math><mi>𝓛</mi><sub><mi>f</mi></sub></math>.
+            The image features
+            <math><b><mi>F</mi></b><sub><mi>s</mi></sub></math>
+            and
+            <math><b><mi>F</mi></b><sub><mi>r</mi></sub></math>
+            are extracted using a pretrained network
+            <math><mi>f</mi></math>.
+            <math>
+              <mo>{</mo>
+              <b><mi>K</mi></b>,
+              <b><mi>M</mi></b>
+              <mo>}</mo>
+            </math>
+            is the intrinsic/extrinsic parameter matrix of the camera view. -->
+        <!-- </p> -->
       </div>
     </div>
   </div>
@@ -189,17 +198,23 @@
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Results</h2>
 
-        <h3 class="title is-5" style="margin-top: 30px;">Normal RMSE</h3>
-        <img src="./images/normal_error.jpg" class="center" style="margin-top: 0px">
-        <p style="font-size: large;">
+        <!-- <h3 class="title is-5" style="margin-top: 30px;">Normal RMSE</h3> -->
+        <img src="./images/vis_tnt.jpg" class="center" style="margin-top: 0px" width="90%">
+        <!-- <p style="font-size: large;">
           Visual comparison of oriented normals on two point clouds with complex geometry. Colors indicate normal errors.
-        </p>
+        </p> -->
 
-        <h3 class="title is-5" style="margin-top: 30px;">Surface Reconstruction</h3>
-        <img src="./images/surf_recon.jpg" class="center" style="margin-top: 0px">
-        <p style="font-size: large;">
+        <!-- <h3 class="title is-5" style="margin-top: 30px;">Surface Reconstruction</h3> -->
+        <img src="./images/vis_360.jpg" class="center" style="margin-top: 20px" width="90%">
+        <!-- <p style="font-size: large;">
           Visual comparison of reconstructed surfaces. As the noise increases (from low to high), our method becomes more advantageous.
-        </p>
+        </p> -->
+
+        <img src="./images/tab_dtu.jpg" class="center" style="margin-top: 50px" width="85%">
+
+        <img src="./images/tab_tnt.jpg" class="center" style="margin-top: 0px" width="80%">
+
+        <img src="./images/tab_360.jpg" class="center" style="margin-top: 0px" width="80%">
       </div>
     </div>
   </div>
@@ -210,10 +225,10 @@
     <h2 class="title">BibTeX</h2>
     <pre>
       <code>
-  @inproceedings{li2025LGSF,
-    title={Learning Normals of Noisy Points by Local Gradient-Aware Surface Filtering},
+  @inproceedings{li2025vags,
+    title={{VA-GS}: Enhancing the Geometric Representation of Gaussian Splatting via View Alignment},
     author={Li, Qing and Feng, Huifang and Gong, Xun and Liu, Yu-Shen},
-    booktitle={International Conference on Computer Vision (ICCV)},
+    booktitle={Thirty-Ninth Conference on Neural Information Processing Systems (NeurIPS)},
     year={2025}
   }
       </code>
