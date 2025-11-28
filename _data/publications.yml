@@ -1,3 +1,18 @@
+- id: PFF-Net
+  title: "PFF-Net: Patch Feature Fitting for Point Cloud Normal Estimation"
+  venue: IEEE Transactions on Visualization and Computer Graphics (TVCG)
+  github: LeoQLi/PFF-Net
+  arxiv: 2511.21365
+  image: PFF-Net.jpg
+  authors:
+    - qing
+    - huifang
+    - kanle
+    - yue
+    - yi
+    - yushen
+    - zhizhong
+
 - id: VA-GS
   title: "VA-GS: Enhancing the Geometric Representation of Gaussian Splatting via View Alignment"
   venue: Conference on Neural Information Processing Systems (NeurIPS), 2025
